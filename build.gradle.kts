@@ -31,9 +31,8 @@ dependencies {
     implementation("com.auth0:jwks-rsa:0.23.0")
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.postgresql:postgresql:42.7.5")
+    implementation("org.postgresql:postgresql:42.7.8")
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.13")
-
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.11.4")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
