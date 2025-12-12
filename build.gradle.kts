@@ -4,7 +4,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("org.springframework.boot") version "3.4.4"
     id("io.spring.dependency-management") version "1.1.7"
-    kotlin("jvm") version "2.1.20"
+    kotlin("jvm") version "2.2.21"
     kotlin("plugin.spring") version "2.1.21"
     kotlin("plugin.noarg") version "2.2.10"
 }
@@ -28,12 +28,11 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")
 
     implementation("com.auth0:java-jwt:4.5.0")
-    implementation("com.auth0:jwks-rsa:0.22.1")
+    implementation("com.auth0:jwks-rsa:0.23.0")
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.postgresql:postgresql:42.7.8")
-    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.8")
-
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.13")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.11.4")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
