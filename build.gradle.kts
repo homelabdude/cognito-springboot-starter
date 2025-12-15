@@ -41,12 +41,12 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-engine:6.0.0")
     testImplementation("org.junit.jupiter:junit-jupiter:6.0.0")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-    testImplementation("org.testcontainers:testcontainers:1.21.3")
-    testImplementation("org.testcontainers:junit-jupiter:1.21.3")
-    testImplementation("org.testcontainers:postgresql:1.21.3")
-    testImplementation("org.testcontainers:testcontainers:1.21.3")
-    testImplementation("org.testcontainers:junit-jupiter:1.21.3")
-    testImplementation("org.testcontainers:postgresql:1.21.3")
+    testImplementation("org.testcontainers:testcontainers:2.0.2")
+    testImplementation("org.testcontainers:junit-jupiter:2.0.2")
+    testImplementation("org.testcontainers:postgresql:2.0.2")
+    testImplementation("org.testcontainers:testcontainers:2.0.2")
+    testImplementation("org.testcontainers:junit-jupiter:2.0.2")
+    testImplementation("org.testcontainers:postgresql:2.0.2")
 }
 
 noArg {
