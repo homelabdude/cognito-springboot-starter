@@ -29,10 +29,11 @@ class DefaultController {
     fun hello(): Any {
         data class HelloResponse(val message: String, val roles: List<String>)
 
-        val username = SecurityContextHolder.getContext().authentication.name
-        val roles = SecurityContextHolder.getContext().authentication.authorities.map { grantedAuthority ->
+        val authentication = SecurityContextHolder.getContext().authentication
+        val username = authentication?.name
+        val roles = authentication?.authorities?.mapNotNull { grantedAuthority ->
             grantedAuthority.authority
-        }.toList()
+        } ?: emptyList()
         return HelloResponse("Hello $username at ${LocalDateTime.now()}", roles)
     }
 }

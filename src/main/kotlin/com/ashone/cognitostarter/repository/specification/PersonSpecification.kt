@@ -13,8 +13,8 @@ import org.springframework.data.jpa.domain.Specification
  * return Specification
  */
 object PersonSpecification {
-    fun hasNameOrPhone(name: String?, phone: String?): Specification<Person?> {
-        return Specification<Person?> { root: Root<Person?>, _: CriteriaQuery<*>?, criteriaBuilder: CriteriaBuilder ->
+    fun hasNameOrPhone(name: String?, phone: String?): Specification<Person> {
+        return Specification<Person> { root: Root<Person>, _: CriteriaQuery<*>, criteriaBuilder: CriteriaBuilder ->
             val predicates: MutableList<Predicate> = ArrayList()
             if (!name.isNullOrEmpty()) {
                 predicates.add(criteriaBuilder.like(root.get("firstName"), "%$name%"))
