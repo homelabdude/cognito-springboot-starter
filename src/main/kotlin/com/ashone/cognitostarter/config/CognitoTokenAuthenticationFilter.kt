@@ -73,8 +73,8 @@ class CognitoTokenAuthenticationFilter(
 
                 logger.info("Setting auth context.")
                 // Set the authentication context and mark user authenticated.
+                authentication.isAuthenticated = true
                 SecurityContextHolder.getContext().authentication = authentication
-                SecurityContextHolder.getContext().authentication.isAuthenticated = true
             } else {
                 response.sendError(HttpStatus.UNAUTHORIZED.value(), "Unable to get username from token")
                 return

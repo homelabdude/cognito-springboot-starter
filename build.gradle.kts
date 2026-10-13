@@ -2,10 +2,10 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.springframework.boot") version "3.5.7"
+    id("org.springframework.boot") version "4.0.0"
     id("io.spring.dependency-management") version "1.1.7"
     kotlin("jvm") version "2.2.21"
-    kotlin("plugin.spring") version "2.1.21"
+    kotlin("plugin.spring") version "2.2.21"
     kotlin("plugin.noarg") version "2.2.10"
 }
 
@@ -33,20 +33,18 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.postgresql:postgresql:42.7.8")
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.14")
-    implementation("org.junit.platform:junit-platform-commons:6.0.0")
-    implementation("org.junit.platform:junit-platform-engine:6.0.0")
-    implementation("org.junit.platform:junit-platform-launcher:6.0.0")
+    implementation("org.junit.platform:junit-platform-commons:6.0.1")
+    implementation("org.junit.platform:junit-platform-engine:6.0.1")
+    implementation("org.junit.platform:junit-platform-launcher:6.0.1")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:6.0.0")
-    testImplementation("org.junit.jupiter:junit-jupiter-engine:6.0.0")
-    testImplementation("org.junit.jupiter:junit-jupiter:6.0.0")
+    testImplementation("org.springframework.boot:spring-boot-starter-restclient")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:6.0.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:6.0.1")
+    testImplementation("org.junit.jupiter:junit-jupiter:6.0.1")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-    testImplementation("org.testcontainers:testcontainers:1.21.3")
-    testImplementation("org.testcontainers:junit-jupiter:1.21.3")
-    testImplementation("org.testcontainers:postgresql:1.21.3")
-    testImplementation("org.testcontainers:testcontainers:1.21.3")
-    testImplementation("org.testcontainers:junit-jupiter:1.21.3")
-    testImplementation("org.testcontainers:postgresql:1.21.3")
+    testImplementation("org.testcontainers:testcontainers:2.0.2")
+    testImplementation("org.testcontainers:testcontainers-junit-jupiter:2.0.2")
+    testImplementation("org.testcontainers:testcontainers-postgresql:2.0.2")
 }
 
 noArg {
