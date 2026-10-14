@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.springframework.boot") version "4.0.0"
+    id("org.springframework.boot") version "4.1.1"
     id("io.spring.dependency-management") version "1.1.7"
     kotlin("jvm") version "2.2.21"
     kotlin("plugin.spring") version "2.2.21"
@@ -32,19 +32,19 @@ dependencies {
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.postgresql:postgresql:42.7.8")
-    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.14")
-    implementation("org.junit.platform:junit-platform-commons:6.0.1")
-    implementation("org.junit.platform:junit-platform-engine:6.0.1")
-    implementation("org.junit.platform:junit-platform-launcher:6.0.1")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:3.1.1")
+    implementation("org.junit.platform:junit-platform-commons:6.1.3")
+    implementation("org.junit.platform:junit-platform-engine:6.1.3")
+    implementation("org.junit.platform:junit-platform-launcher:6.1.3")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.boot:spring-boot-starter-restclient")
     testImplementation("org.junit.jupiter:junit-jupiter-api:6.0.1")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:6.0.1")
     testImplementation("org.junit.jupiter:junit-jupiter:6.0.1")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-    testImplementation("org.testcontainers:testcontainers:2.0.2")
-    testImplementation("org.testcontainers:testcontainers-junit-jupiter:2.0.2")
-    testImplementation("org.testcontainers:testcontainers-postgresql:2.0.2")
+    testImplementation("org.testcontainers:testcontainers:2.0.5")
+    testImplementation("org.testcontainers:testcontainers-junit-jupiter:2.0.5")
+    testImplementation("org.testcontainers:testcontainers-postgresql:2.0.5")
 }
 
 noArg {
