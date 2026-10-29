@@ -32,7 +32,7 @@ dependencies {
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.postgresql:postgresql:42.7.8")
-    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:3.1.1")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:3.2.0")
     implementation("org.junit.platform:junit-platform-commons:6.1.3")
     implementation("org.junit.platform:junit-platform-engine:6.1.3")
     implementation("org.junit.platform:junit-platform-launcher:6.1.3")
