@@ -28,7 +28,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")
 
     implementation("com.auth0:java-jwt:4.6.2")
-    implementation("com.auth0:jwks-rsa:0.24.1")
+    implementation("com.auth0:jwks-rsa:0.24.2")
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.postgresql:postgresql:42.7.14")
